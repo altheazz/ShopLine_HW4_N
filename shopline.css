@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
 }
@@ -7,12 +11,15 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul{
 }
 
 .sl-header{
+    margin: auto;
     width: 1403px;
     height: 120px;
     background-color: #ebf1f8;
     position: sticky;
+    top: 0px;
 }
 .sl-head{
+    
     height: 30px;
     display: flex;
     justify-content: end;
@@ -31,15 +38,19 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul{
     width: 767px;
     height: 27px;
     justify-content: space-evenly;
+    
 }
 
 .sl-menu li{
-    
     list-style-type: none;
+}
+.sl-menu li a{
+    text-decoration: none;
+    color: #172b4d;
 }
 .logo{
     width: 200px;
-    height: 100%;
+    height: 40px;
     display: flex;
     align-items: center;
 }
@@ -47,21 +58,25 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul{
     width: 100%;
 }
 .top{
+    margin: auto;
     height: 90px;
     width: 100%;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    
 }
 .top button{
     width: 100px;
-    height: 50px;
-    background-color: blue;
+    height: 48px;
+    background-color: #0061ff;
     color: #fff;
-    border-radius: 15px;
-    border-color: blue;
+    box-shadow: none;
+    border: 0px;
+    border-radius: 8px;
 }
+
 .sl-box1{
+    margin: auto;
     display: flex;
     flex-direction: row;
     width: 1403px;
@@ -109,12 +124,14 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul{
     padding: 40px;
 }
 .square{
+    margin: auto;
     width: 1403px;
     height: 80px;
     background-color: #f0f4f8;
     padding: 0 0 80px;
 }
 .sl-box2{
+    margin: auto;
     width: 1275px;
     height: 150px;
     background-color: #f7f8f9;
@@ -133,6 +150,7 @@ h1,h2,h3,h4,h5,h6,p,span,li,ul{
     font-size: 16px;
 }
 .sl-box3{
+    margin: auto;
     width: 1403px;
     height: 3150px;
     /* background-color: #65d6b2; */
@@ -243,8 +261,10 @@ ul li::marker{
     height: 471px;
 } 
 .sl-box4{
-    width: 1403px;
-    height: 755px;
+    margin: auto;
+    width: 1243px;
+    height: 600px;
+    padding: 80px;
     background-color: #f7f8f9;
     display: flex;
     flex-direction: column;
@@ -255,7 +275,8 @@ ul li::marker{
 .sl-box4 .index{
     width: 1246px;
     height: 655px;
-    margin: 80px;
+    margin: 80px 0;
+    /* margin: auto; */
     /* background-color: rgb(201, 237, 225); */
     display: flex;
     flex-direction: row;
@@ -263,8 +284,8 @@ ul li::marker{
     justify-content: center;
     text-align: center;
 }
-.sl-box4 .index .item{
-    padding: 0 20px 0 20px;
+.sl-box4 .index .item .text{
+    padding: 40px;
 }
 .sl-box4 .index h5{
     font-size: 20px;
@@ -277,4 +298,188 @@ ul li::marker{
 .sl-box4 .index img{
     width: auto;
     height: auto;
+}
+.sl-box5{
+    margin: auto;
+    width: 1306px;
+    height: 530px;
+    background-color: #f7f8f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #052855;
+    font-size: 28px;
+    padding: 50px;
+}
+.sl-box5 h3{
+    text-align: center;
+    font-size: 28px;
+}
+.sl-box5 .sl-command-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sl-box5 img{
+    width: 147px;
+}
+.sl-box5 p{
+    width: 736px;
+    height: 54px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    margin: 0 340px;
+}
+.sl-box5 span{
+    text-align: center;
+}
+.sl-footer .sl-footer-top{
+    width: 1403px;
+    height: 285px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #ebf1f8;
+    color: #052855;
+}
+.sl-footer-top .text h2{
+    width: 1054px;
+    height: 55px;
+    font-size: 40px;
+    text-align: center;
+}
+.sl-footer-top .btn{
+    display: flex;
+    justify-content: center;
+}
+.sl-footer-top .btn button{
+    width: 160px;
+    height: 48px;
+    font-size: 16px;
+    background-color: #0061ff;
+    color: #fff;
+    box-shadow: none;
+    border: 0px;
+    border-radius: 8px;
+}
+.sl-footer .sl-footer-botton{
+    width: 1403px;
+    height: 1700px;
+    margin: auto;
+    background-color: #00142d;
+    color: #ebf1f8;
+}
+.sl-footer-botton .about{
+    width: 1054px;
+    height: 27px;
+    display: flex;
+    padding: 30px 150px;
+    gap: 20px;
+}
+.sl-footer-botton .about a{
+    width: 64px;
+    height: 27px;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    color: #ebf1f8;
+}
+.sl-footer-box{
+    width: 1400px;
+    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.sl-footer-list-list1{
+    width: 1050px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid #717171;
+    
+    
+}
+.sl-footer-list-list1 .item{
+    margin: 25px;
+    box-sizing: border-box;
+}
+.sl-footer-list-list1 .item h4{
+    font-size: 16px;
+}
+.sl-footer-list-list1 .item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+.sl-footer-list-list1 .item li{
+    font-size: 16px;
+    list-style: none;
+}
+.sl-footer-list-list1 .item a{
+    font-size: 15px;
+    color: #ccc;
+    text-decoration: none;
+}
+.sl-footer-list-list2{
+    width: 1043px;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid #717171;
+    
+}
+.sl-footer-list-list2 .item button{
+    width: 225px;
+    height: 37px;
+    font-size: 16px;
+    background-color: #e3b54c;
+    color: #172b4d;
+    margin: 30px;
+}
+.sl-footer-last1{
+    width: 1403px;
+    display: flex;
+    justify-content: center;
+}
+.sl-footer-social{
+    width: 1043px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.sl-footer-social .sl-footer-pic{
+    display: flex;
+    gap: 10px;
+}
+.sl-footer-social .sl-footer-pic img{
+    width: 25px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.sl-footer-terms a{
+    color: #ccc;
+    text-decoration: none;
+    border-right: 1px solid #ccc ;
+}
+.sl-footer-terms :nth-last-child(1){
+    border-right: 0px;
+}
+.sl-footer-last2{
+    width: 1203px;
+    margin: 0 180px;
+}
+.sl-footer-last2 .sl-footer-terms{
+    display: flex;
+    gap: 30px;
+}
+.sl-footer-last2 .sl-footer-terms a{
+    width: 100px;
 }
